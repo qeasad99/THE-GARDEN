@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE GARDEN</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="pcmenu">
+        <ul class="ul01">
+          <li>
+            <a href="#">진료기준 </a>
+            <div class="line"></div>
+            <div>
+              <a href="#">
+                <p>Why The Garden</p>
+                <p>의료진 소개</p>
+                <p>4단계 통증조절</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="#">시그니처</a>
+            <div class="line"></div>
+            <div>
+              <a href="#">
+                <p>비수술 눈밑교정</p>
+                <p>더가든셀 프로그램</p>
+                <p>맨즈 리프팅</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="#">고민별시술</a>
+            <div class="line"></div>
+            <div>
+              <a href="#">
+                <p>눈밑 꺼짐</p>
+                <p>볼 처짐</p>
+                <p>피부 탄력</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <h1>
+          <a href="index.html"><img src="img/logo_.svg" alt="로고" /></a>
+        </h1>
+        <ul class="ul02">
+          <li>
+            <a href="#">Longevity Care</a>
+            <div class="line"></div>
+            <div>
+              <a href="#">
+                <p>고압산소 케어</p>
+                <p>스페셜 수액케어</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="#">블로그</a>
+            <div class="line"></div>
+          </li>
+          <li>
+            <a href="#">Reservation <span>예약</span></a>
+          </li>
+          <li>
+            <a href="#">Language</a>
+            <div class="line"></div>
+            <div>
+              <a href="#">
+                <p>KOR</p>
+                <p>ENG</p>
+                <p>CHN</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mobilemenu">
+        <h1 class="m-logo">
+          <a href="#"><img src="img/logo_.svg" alt="로고" /></a>
+        </h1>
+        <div class="m-util">
+          <a href="#">Language</a>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="m-lang-dropdown">
+        <ul class="m-lang-list">
+          <li><a href="#">KOR</a></li>
+          <li><a href="#">ENG</a></li>
+          <li><a href="#">CHN</a></li>
+        </ul>
+      </div>
+      <!-- 우측에서 슬라이드로 들어오는 모바일 드로어 메뉴 -->
+      <div class="m-drawer">
+        <!-- 드로어 헤더 (로고 & 닫기 버튼) -->
+        <div class="m-drawer-header">
+          <div class="m-drawer-logo">
+            <img src="img/logo_.svg" alt="로고" />
+          </div>
+          <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+
+        <!-- 아코디언 메뉴 목록 -->
+        <ul class="m-acc-menu">
+          <li class="has-sub">
+            <a href="#" class="acc-title">진료기준</a>
+            <ul class="acc-sub">
+              <li><a href="#">Why The Garden</a></li>
+              <li><a href="#">의료진 소개</a></li>
+              <li><a href="#">4단계 통증조절</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#" class="acc-title">시그니처</a>
+            <ul class="acc-sub">
+              <li><a href="#">비수술 눈밑교정</a></li>
+              <li><a href="#">더가든셀 프로그램</a></li>
+              <li><a href="#">맨즈 리프팅</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#" class="acc-title">고민별 시술</a>
+            <ul class="acc-sub">
+              <li><a href="#">눈밑 꺼짐</a></li>
+              <li><a href="#">볼 쳐짐</a></li>
+              <li><a href="#">피부 탄력</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#" class="acc-title">Longevity Care</a>
+            <ul class="acc-sub">
+              <li><a href="#">고압산소 케어</a></li>
+              <li><a href="#">스페셜 수액케어</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="acc-title">예약</a></li>
+          <li><a href="#" class="acc-title">블로그</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="visual">
+      <video
+        src="https://www.jfclinic.com/assets/images/main/main-visual-video.mp4"
+        muted
+        loop
+        autoplay
+      ></video>
+      <div class="txt">
+        <p>고객의 신뢰를 바탕으로 지속적인 성장을 이루어온 THE GARDEN</p>
+        <h2>
+          Lifelong Care<br />
+          <span> Beauty Doctor</span>
+        </h2>
+      </div>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-brands fa-kakao-talk"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-line"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div id="container">
+      <section id="con01">
+        <div class="all">
+          <div class="all-txt">
+            <h3>THE GARDEN<br />Realignment of Glow</h3>
+            <p>
+              다시 찾은 피부의 찬란한 곡선,<br />더가든에서 당신의 궤도가
+              시작됩니다.
+            </p>
+          </div>
+          <div class="skin">
+            <div class="left">
+              <img src="img/con01_1.png" alt="skin01" />
+              <div>
+                <p>
+                  피부가 스스로 회복하는 힘을 되찾아<br />건강한 궤도 위에서
+                  다시 빛나도록 돕습니다.
+                </p>
+                <img src="img/con01_2.png" alt="skin02" />
+                <p>skin</p>
+              </div>
+            </div>
+            <div class="right">
+              <img src="img/con01_3.png" alt="skin03" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="con02">
+        <div class="txt">
+          <p>Signature Program</p>
+          <p>더가든피부과의원은 본연의 모습에 집중합니다.</p>
+          <p>
+            자연스러운 모습에서 조금 더 특별해질 수 있도록 개인의 피부고민에
+            맞는<br />
+            1:1 맞춤 시술을 진행합니다.
+          </p>
+        </div>
+        <ul>
+          <li>
+            <div class="back">
+              <a href="#">
+                <h4>
+                  High-End<br />
+                  <span>Anti aging</span>
+                </h4>
+                <p>
+                  손끝으로 걷어 올리는 시간의 장막<br />최선의 나와 마주보기
+                </p>
+              </a>
+            </div>
+            <div class="front">
+              <a href="#">
+                <p>안티에이징</p>
+                <p>
+                  손끝으로 걷어 올리는 시간의<br />
+                  장막 최선의 나와 마주보기
+                </p>
+              </a>
+            </div>
+            <p class="category"><a href="#">안티에이징 ></a></p>
+          </li>
+
+          <li>
+            <div class="back">
+              <a href="#">
+                <h4>
+                  Clear<br />
+                  <span>Pigmentation</span>
+                </h4>
+                <p>피부 본연의 색을 찾는 시간<br />더 자연스럽게 더 맑게</p>
+              </a>
+            </div>
+            <div class="front">
+              <a href="#">
+                <p>색소질환</p>
+                <p>피부 본연의 색을 찾는 시간<br />더 자연스럽게 더 맑게</p>
+              </a>
+            </div>
+            <p class="category"><a href="#">색소질환 ></a></p>
+          </li>
+          <li>
+            <div class="back">
+              <a href="#">
+                <h4>
+                  Fit<br />
+                  <span>Botox</span>
+                </h4>
+                <p>맞춤 수트처럼 내 얼굴에<br />맞춘 1:1 퍼펙트 핏 시술</p>
+              </a>
+            </div>
+            <div class="front">
+              <a href="#">
+                <p>보톡스·필러</p>
+                <p>맞춤 수트처럼 내 얼굴에<br />맞춘 1:1 퍼펙트 핏 시술</p>
+              </a>
+            </div>
+            <p class="category"><a href="#">보톡스·필러 ></a></p>
+          </li>
+        </ul>
+      </section>
+      <section id="con03">
+        <div class="all">
+          <div>
+            <p>( PROCESS )</p>
+            <h5>더가든의 진료 여정</h5>
+            <p>
+              처음 오시는 분들이 안심할 수 있도록,<br />
+              체계적인 프로세스로 진행합니다.
+            </p>
+
+            <ul class="left">
+              <li>
+                <a href="#"><i class="fa-solid fa-arrow-left-long"></i> PREV</a>
+              </li>
+              <li>
+                <a href="#"
+                  >NEXT <i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="right">
+            <li>
+              <img src="img/con03_1.png" alt="" />
+              <p>맞춤시술</p>
+              <p>
+                개인별 맞춤 계획에 따라 4단계 통증 조절과 <br />
+                함께 정교한 시술을 진행합니다.
+              </p>
+            </li>
+            <li>
+              <img src="img/con03_2.png" alt="" />
+              <p>사후케어</p>
+              <p>
+                시술 후 관리와 고압산소치료(선택)를 통해<br />체계적인 경과
+                관리로 최적의 결과를 이끌어냅니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="con04">
+        <h6><span>K</span>eep your 3 word</h6>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/con04_1.png" alt="" />
+              <div class="txt">
+                <p>
+                  (Concentrate)<span> 온전한 집중으로</span><br />
+                  Detail<br />
+                  Professional
+                </p>
+                <div>
+                  <p>더 가든은 오롯이 한 사람에게 집중합니다</p>
+                  <p>
+                    오직 한 사람에게 집중하기 위해 모든 치료는 예약제로 진행하고
+                    있으며,<br />
+                    1:1 주치의가 직접 상담 후, 한 사람을 위한 1인실에서만
+                    프라이빗하게<br />
+                    진행됩니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/con04_2.png" alt="" />
+              <div class="txt">
+                <p>
+                  Concentrate<br />
+                  (Detail)<span> 지극히 섬세하게</span><br />
+                  Professional
+                </p>
+                <div>
+                  <p>작은 차이도 놓치지 않는 섬세함의 차이를 경험하세요</p>
+                  <p>
+                    예민한 피부일수록 세심한 눈과 손길이 필요합니다.<br />
+                    더가든 피부과의원은 피부과 전문의가 직접 진료 전 과정에
+                    함께하며,<br />
+                    치료 전 상담부터 사후 케어까지 하나하나 세심하게 설계됩니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/con04_3.png" alt="" />
+              <div class="txt">
+                <p>
+                  Concentrate<br />
+                  Detail<br />
+                  (Professional) <span> 탁월한 전문성으로</span>
+                </p>
+                <div>
+                  <p>경험 위 신뢰를 더한 깊이 있는 전문성을 만나세요</p>
+                  <p>
+                    더가든의 대표원장은 대학병원 피부암·미용외과에서<br />
+                    전담 교수로 부임한 탁월한 전문성을 갖춘 피부과 전문의입니다.
+                    <br />#피부과 전문의 #국내외 학회 15편 이상 논문발표
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="brand">
+          <a href="#">Brand Care</a>
+        </div>
+      </section>
+      <section id="con05">
+        <div class="all">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca3e9a0715533%3A0xd4b4823c4df5bcc1!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrj4TsgrDrjIDroZwgMTE3IDEx7Li1!5e0!3m2!1sko!2skr!4v1790012570079!5m2!1sko!2skr"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <div class="txt">
+            <p>( Visit Us )</p>
+            <h5>오시는 길</h5>
+            <ul>
+              <li class="li01">
+                <p>Address</p>
+                <p>서울시 강남구 도산대로 117,11층</p>
+                <p>
+                  <i class="fa-solid fa-3"></i> 신사역 8번 출구에서 도보 120m
+                </p>
+              </li>
+              <li class="li02">
+                <p class="clinic">Clinic Hours</p>
+                <div>
+                  <p>·월-금요일</p>
+                  <p>10:00-20:00</p>
+                </div>
+                <div>
+                  <p>·토요일</p>
+                  <p>10:00-16:00</p>
+                </div>
+                <div>
+                  <p>·일요일·공휴일</p>
+                  <p class="close">휴진</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="all">
+        <div class="txt01">
+          <p>대표 ｜ 최성현</p>
+          <p>사업자 등록 번호 ｜ 213-18-66035</p>
+          <p><a href="#">TEL ｜ 02-6217-0707</a></p>
+        </div>
+        <a href="index.html"><img src="img/logo_.svg" alt="로고" /></a>
+        <div class="txt02">
+          <p><a href="#">진료안내</a></p>
+          <p><a href="#">개인정보처리방침</a></p>
+          <p><a href="#">비급여항목안내</a></p>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#">INSTAGRAM</a></li>
+        <li><a href="#">YOUTUBE</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">KAKAO</a></li>
+      </ul>
+    </footer>
+    <!-- <div class="up">
+      <i class="fa-solid fa-square-caret-up"></i>
+    </div> -->
+    <div class="up" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+      <i class="fa-solid fa-square-caret-up"></i>
+    </div>
+    <script>
+      /*header script*/
+      $("header .pcmenu li").on("mouseenter", function () {
+        $(this).children("div:not(.line)").show();
+        $(this).find(".line").stop().animate({ width: "100%" });
+      });
+
+      $("header .pcmenu li").on("mouseleave", function () {
+        $(this).children("div:not(.line)").hide();
+        $(this).find(".line").stop().animate({ width: "0%" });
+      });
+      $(".m-util a").on("click", function () {
+        $(".m-lang-dropdown").stop().slideToggle(200);
+      });
+      $(".m-util i").on("click", function () {
+        $(".m-drawer").addClass("active");
+      });
+      $(".m-drawer-header a").on("click", function () {
+        $(".m-drawer").removeClass("active");
+      });
+      $(".m-acc-menu .has-sub > .acc-title").on("click", function () {
+        var $parent = $(this).parent("li");
+        $parent
+          .siblings(".has-sub")
+          .removeClass("open")
+          .find(".acc-sub")
+          .slideUp(200);
+        $parent.toggleClass("open");
+        $parent.children(".acc-sub").stop().slideToggle(200);
+      });
+      /*visual script*/
+      // $(window).on("scroll", function () {
+      //   let sc = $(this).scrollTop();
+      //   //   console.log(sc);
+      //   let num = $("#visual").offset().top;
+      //   if (sc >= num - 1000) {
+      //     //  console.log(num);
+      //     $("#visual").addClass("on");
+      //   } else {
+      //     $("#visual").removeClass("on");
+      //   }
+      // });
+      $(window).on("scroll", function () {
+        let sc = $(this).scrollTop();
+        let num = $("#visual").offset().top;
+
+        if (sc >= num - 1000) {
+          $("#visual").addClass("on");
+        } else {
+          $("#visual").removeClass("on");
+        }
+      });
+
+      $(window).trigger("scroll");
+      /*#container #con02 script*/
+      $("#container #con02 ul li:first-child").on("mouseenter", function () {
+        $(this).addClass("zoom");
+
+        $(this).find(".front").stop().css(
+          {
+            top: "0",
+          },
+          500,
+        );
+      });
+
+      $("#container #con02 ul li:first-child").on("mouseleave", function () {
+        $(this).removeClass("zoom");
+
+        $(this).find(".front").stop().css(
+          {
+            top: "100%",
+          },
+          500,
+        );
+      });
+      $("#container #con02 ul li:nth-of-type(2)").on("mouseenter", function () {
+        $(this).addClass("zoom");
+        $(this).find(".front").stop().css({
+          top: "0",
+        });
+      });
+
+      $("#container #con02 ul li:nth-of-type(2)").on("mouseleave", function () {
+        $(this).removeClass("zoom");
+        $(this).find(".front").stop().css({
+          top: "100%",
+        });
+      });
+      $("#container #con02 ul li:last-child").on("mouseenter", function () {
+        $(this).addClass("zoom");
+        $(this).find(".front").stop().css(
+          {
+            top: "0",
+          },
+          500,
+        );
+      });
+
+      $("#container #con02 ul li:last-child").on("mouseleave", function () {
+        $(this).removeClass("zoom");
+        $(this).find(".front").stop().css(
+          {
+            top: "150%",
+          },
+          500,
+        );
+      });
+      /*#container #con04 script*/
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>
